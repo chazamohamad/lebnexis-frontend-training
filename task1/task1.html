@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background: #ffffff;
+        font-family: "Poppins", Arial, sans-serif;
+      }
+
+      .newsletter-card {
+        position: relative;
+        width: 610px;
+        height: 362px;
+        background: #ffffff;
+        overflow: hidden;
+      }
+
+      .close-icon {
+        position: absolute;
+        top: 27px;
+        right: 24px;
+        width: 10px;
+        height: 10px;
+      }
+
+      .newsletter-hero {
+        width: 514px;
+        margin: 62px auto 0;
+        display: grid;
+        grid-template-columns: 239px 235px;
+        column-gap: 40px;
+        align-items: start;
+      }
+
+      .newsletter-image {
+        width: 239px;
+        height: auto;
+        display: block;
+      }
+
+      .newsletter-content {
+        padding-top: 8px;
+      }
+
+      .newsletter-title {
+        margin: 0 0 2px;
+        font-size: 13px;
+        line-height: 1;
+        font-weight: 700;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+        color: #000000;
+      }
+
+      .newsletter-subtitle {
+        margin: 0 0 27px;
+        font-size: 30px;
+        line-height: 1;
+        font-weight: 700;
+        letter-spacing: 3.2px;
+        text-transform: uppercase;
+        color: #ff4d29;
+      }
+
+      .newsletter-description {
+        width: 235px;
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.48;
+        font-weight: 400;
+        color: #000000;
+      }
+
+      .newsletter-subscribe {
+        font-weight: 700;
+      }
+
+      .subscribe-form {
+        width: 514px;
+        height: 31px;
+        margin: 36px auto 0;
+        display: flex;
+      }
+
+      .email-input {
+        flex: 1;
+        height: 31px;
+        padding: 0 11px;
+        border: 1px solid #d0d0d0;
+        border-right: 0;
+        border-radius: 4px 0 0 4px;
+        outline: none;
+        font-family: inherit;
+        font-size: 12px;
+        color: #000000;
+      }
+
+      .email-input::placeholder {
+        color: #9f9f9f;
+      }
+
+      .subscribe-button {
+        width: 126px;
+        height: 31px;
+        border: 0;
+        border-radius: 0 4px 4px 0;
+        background: linear-gradient(90deg, #fe5914 0%, #ff4138 100%);
+        color: #ffffff;
+        font-family: inherit;
+        font-size: 11px;
+        line-height: 1;
+        font-weight: 700;
+        letter-spacing: 1.1px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      .email-note {
+        margin: 24px 0 0;
+        text-align: center;
+        font-size: 8px;
+        line-height: 1;
+        font-style: italic;
+        font-weight: 400;
+        color: #b7b7b7;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="newsletter-card">
+      <img class="close-icon" src="assets/icon/Group 6 (1).png" alt="Close" />
+
+      <section class="newsletter-hero">
+        <img
+          class="newsletter-image"
+          src="assets/images/Group 8 (1).png"
+          alt="Person reading newsletter"
+        />
+
+        <div class="newsletter-content">
+          <h1 class="newsletter-title">Get our weekly</h1>
+          <h2 class="newsletter-subtitle">Newsletter</h2>
+          <p class="newsletter-description">
+            Get weekly updates on the newest design stories, case studies and
+            tips right in your mailbox.
+            <span class="newsletter-subscribe">Subscribe now!</span>
+          </p>
+        </div>
+      </section>
+
+      <form class="subscribe-form">
+        <input class="email-input" type="email" placeholder="Email Address" />
+        <button class="subscribe-button" type="submit">Subscribe</button>
+      </form>
+
+      <p class="email-note">Your email is safe with us, we dont spam.</p>
+    </main>
+  </body>
+</html>
